@@ -40,7 +40,7 @@
   <body>
     <div id="wrapper">
       <!-- Header -->
-           <header class="transparent header-light header-float">
+      <header class="transparent header-light header-float">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
@@ -70,45 +70,47 @@
                   </div>
 
                   <!-- Navigation -->
-                    <div class="de-flex-col">
-                  <div class="d-flex align-items-center justify-content-end">
-                    <!-- Nav -->
-                    <ul id="mainmenu" class="mb-0">
-                      <li>
-                        <a class="menu-item" href="https://www.najmigroup.co/"
-                          >Home</a
-                        >
-                      </li>
-                      <li>
-                        <a class="menu-item" href="about.html">About Us</a>
-                      </li>
-                      <li>
-                        <a class="menu-item" href="properties.html">Projects</a>
-                      </li>
-                      <!-- Visible only on mobile -->
-                      <li>
-                        <a
-                          class="menu-item d-block d-lg-none"
-                          href="contact.html"
-                          >Contact Us</a
-                        >
-                      </li>
-                    </ul>
+                  <div class="de-flex-col">
+                    <div class="d-flex align-items-center justify-content-end">
+                      <!-- Nav -->
+                      <ul id="mainmenu" class="mb-0">
+                        <li>
+                          <a class="menu-item" href="https://www.najmigroup.co/"
+                            >Home</a
+                          >
+                        </li>
+                        <li>
+                          <a class="menu-item" href="about.html">About Us</a>
+                        </li>
+                        <li>
+                          <a class="menu-item" href="properties.html"
+                            >Projects</a
+                          >
+                        </li>
+                        <!-- Visible only on mobile -->
+                        <li>
+                          <a
+                            class="menu-item d-block d-lg-none"
+                            href="contact.html"
+                            >Contact Us</a
+                          >
+                        </li>
+                      </ul>
 
-                    <!-- Desktop Contact Button -->
-                    <a
-                      class="btn-main fx-slide ms-3 d-none d-lg-inline-block"
-                      href="contact.html"
-                    >
-                      <span>Contact Us</span>
-                    </a>
+                      <!-- Desktop Contact Button -->
+                      <a
+                        class="btn-main fx-slide ms-3 d-none d-lg-inline-block"
+                        href="contact.html"
+                      >
+                        <span>Contact Us</span>
+                      </a>
 
-                    <!-- Mobile menu toggle -->
-                    <div class="menu_side_area ms-3">
-                      <span id="menu-btn"></span>
+                      <!-- Mobile menu toggle -->
+                      <div class="menu_side_area ms-3">
+                        <span id="menu-btn"></span>
+                      </div>
                     </div>
                   </div>
-                </div>
                 </div>
               </div>
             </div>
@@ -126,7 +128,7 @@
             <div class="row g-4 align-items-center justify-content-between">
               <!-- Headline -->
               <div class="col-md-6">
-                <h1 class="mb-3">Your Dream Farmhouse Awaits</h1>
+                <h1 class="mb-3">Your Dream Farmhouse Plot Awaits</h1>
                 <p class="lead text-white">
                   Own a private farmhouse with bungalow & swimming pool or
                   secure a spacious plot to build your vision — all in a prime
@@ -171,8 +173,8 @@
             <div class="row">
               <div class="col-lg-12">
                 <div class="d-flex justify-content-between">
-                  <div><h6>Private Bungalow</h6></div>
-                  <div><h6>Swimming Pool</h6></div>
+                  <div><h6>2BHK Bungalow</h6></div>
+                  <div><h6>Private Swimming Pool</h6></div>
                   <div><h6>Fruit Plantation</h6></div>
                   <!-- <div><h6>High ROI Location</h6></div> -->
                 </div>
@@ -288,16 +290,16 @@
                         <div class="card-body">
                           <p class="card-text small mb-2">
                             Own a 10,000 sq.ft farmhouse plot with a modern
-                            1,000 sq.ft 2 BHK bungalow, a private swimming pool
+                            1,000 sq.ft <br/> 2 BHK bungalow, a private swimming pool
                             and a fruit plantation.
                           </p>
                           <h4 class="fw-bold price-blur">₹45 Lakhs</h4>
                           <p class="small text-muted mb-3">
-                            (All inclusive, registration covered)
+                            (All inclusive)
                           </p>
                           <button
                             class="btn-main fx-slide mt-2 reveal-price-btn"
-                            data-option="A"
+                            data-option="bungalow10k"
                           >
                             View Price
                           </button>
@@ -317,11 +319,11 @@
                           </p>
                           <h4 class="fw-bold price-blur">₹58 Lakhs</h4>
                           <p class="small text-muted mb-3">
-                            (All inclusive, registration covered)
+                            (All inclusive)
                           </p>
                           <button
                             class="btn-main fx-slide mt-2 reveal-price-btn"
-                            data-option="B"
+                            data-option="bungalow20k"
                           >
                             View Price
                           </button>
@@ -394,7 +396,7 @@
                           <p class="small text-muted mb-3">(All inclusive)</p>
                           <button
                             class="btn-main fx-slide mt-2 reveal-price-btn"
-                            data-option="A"
+                            data-option="plot10k"
                           >
                             View Price
                           </button>
@@ -415,7 +417,7 @@
                           <p class="small text-muted mb-3">(All inclusive)</p>
                           <button
                             class="btn-main fx-slide mt-2 reveal-price-btn"
-                            data-option="B"
+                            data-option="plot20k"
                           >
                             View Price
                           </button>
@@ -979,51 +981,34 @@
         </div>
       </footer>
       <!-- Modal -->
+      <!-- Modal -->
       <div class="modal fade" id="priceModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
           <div class="modal-content">
+            <!-- Modal Header with Close Button -->
             <div class="modal-header">
-              <h5 class="modal-title">Enter Your Details</h5>
+              <h5 class="modal-title">View Price</h5>
               <button
                 type="button"
                 class="btn-close"
                 data-bs-dismiss="modal"
+                aria-label="Close"
               ></button>
             </div>
-            <div class="modal-body">
-              <form id="leadForm">
-                <div class="mb-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    name="name"
-                    placeholder="Your Name"
-                    required
-                  />
-                </div>
-                <div class="mb-3">
-                  <input
-                    type="email"
-                    class="form-control"
-                    name="email"
-                    placeholder="Email Address"
-                    required
-                  />
-                </div>
-                <div class="mb-3">
-                  <input
-                    type="tel"
-                    class="form-control"
-                    name="phone"
-                    placeholder="Phone Number"
-                    required
-                  />
-                </div>
-                <input type="hidden" name="option" id="selectedOption" />
-                <button type="submit" class="btn btn-primary w-100">
-                  Submit & View Price
-                </button>
-              </form>
+
+            <!-- Modal Body with iframe -->
+            <div class="modal-body p-0">
+              <iframe
+                src="https://app.visionarybizz.com/widget/form/eafsAzXZxnIqBYL32ao5"
+                style="
+                  width: 100%;
+                  height: 492px;
+                  border: none;
+                  border-radius: 3px;
+                "
+                id="inline-eafsAzXZxnIqBYL32ao5"
+                title="Leads Form"
+              ></iframe>
             </div>
           </div>
         </div>
@@ -1031,49 +1016,40 @@
 
       <!-- footer end -->
     </div>
+    <script src="https://app.visionarybizz.com/js/form_embed.js"></script>
     <script src="js/vendors.js"></script>
     <script src="js/designesia.js"></script>
     <script src="js/validation-booking.js"></script>
     <script src="js/swiper.js"></script>
     <script src="js/custom-swiper-2.js"></script>
     <script>
-      document.querySelectorAll(".reveal-price-btn").forEach((btn) => {
-        btn.addEventListener("click", function () {
-          // Save selected option
-          document.getElementById("selectedOption").value = this.dataset.option;
-          // Show modal
-          var myModal = new bootstrap.Modal(
-            document.getElementById("priceModal")
-          );
-          myModal.show();
-        });
-      });
+  // Function to reveal all prices
+  function revealAllPrices() {
+    document.querySelectorAll(".price-blur").forEach((el) => {
+      el.classList.remove("price-blur");
+    });
+  }
 
-      document
-        .getElementById("leadForm")
-        .addEventListener("submit", function (e) {
-          e.preventDefault();
+  // Check URL query for automatic price reveal
+  const params = new URLSearchParams(window.location.search);
+  if (params.get("showPrices") === "true") {
+    revealAllPrices(); // Reveal all prices immediately
+    // Optional: clean URL so the query param doesn't stay
+    history.replaceState({}, document.title, window.location.pathname);
+  }
 
-          // Example: Normally here you'd send form data via AJAX
-          alert("Thank you! Price unlocked.");
+  // Optional: Keep existing modal logic for individual "View Price" clicks
+  let currentOption = null;
+  document.querySelectorAll(".reveal-price-btn").forEach((button) => {
+    button.addEventListener("click", function () {
+      currentOption = this.getAttribute("data-option");
+      const priceModal = new bootstrap.Modal(
+        document.getElementById("priceModal")
+      );
+      priceModal.show();
+    });
+  });
+</script>
 
-          // Reveal price for the selected option
-          const option = document.getElementById("selectedOption").value;
-          if (option === "A") {
-            document
-              .querySelectorAll(".price-blur")[0]
-              .classList.add("price-revealed");
-          } else {
-            document
-              .querySelectorAll(".price-blur")[1]
-              .classList.add("price-revealed");
-          }
-
-          // Close modal
-          bootstrap.Modal.getInstance(
-            document.getElementById("priceModal")
-          ).hide();
-        });
-    </script>
   </body>
 </html>
