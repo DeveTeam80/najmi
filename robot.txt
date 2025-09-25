@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+sitemap:https://najmigroup.co/sitemap.xml
