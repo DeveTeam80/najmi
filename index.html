@@ -1048,7 +1048,6 @@
           </div>
         </div>
       </section>
-
       <!-- CTA Section -->
     </div>
 
@@ -1177,7 +1176,39 @@
           </div>
         </div>
       </div>
-    </footer> -->
+    </footer><a href="tel:+91 99878 99052" target="_blank" class="call">
+          <img src="images/najmi/call (1).png" alt="Email" class="imgcall" />
+        </a>
+
+        <a href="https://wa.me/9987899052" target="_blank" class="whats">
+          <img src="images/najmi/whatsapp (3).png" alt="WhatsApp" class="imgwhats" />
+        </a>    <div
+          class="modal fade"
+          id="offerPopup"
+          tabindex="-1"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center p-4">
+              <button
+                type="button"
+                class="btn-close position-absolute top-5 end-0 pe-5"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+
+              <h2 class="fw-bold mb-3">Special Offer</h2>
+              <p class="mb-4">
+                Limited Time Prelaunch Offer! Contact Us for more details!
+              </p>
+<button type="button" class="btn-main fx-slide btn-line" id="contactBtn">
+  Contact Us
+</button>
+
+
+            </div>
+          </div>
+        </div> -->
     <!-- footer begin -->
     <footer class="text-light section-dark dark-scheme">
       <div class="container">
@@ -1280,7 +1311,40 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer><a href="tel:+91 99878 99052" target="_blank" class="call">
+          <img src="images/najmi/call (1).png" alt="Email" class="imgcall" />
+        </a>
+
+        <a href="https://wa.me/9987899052" target="_blank" class="whats">
+          <img src="images/najmi/whatsapp (3).png" alt="WhatsApp" class="imgwhats" />
+        </a>    <div
+          class="modal fade"
+          id="offerPopup"
+          tabindex="-1"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center p-4">
+              <button
+                type="button"
+                class="btn-close position-absolute top-5 end-0 pe-5"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+
+              <h2 class="fw-bold mb-3">Special Offer</h2>
+              <p class="mb-4">
+                Limited Time Prelaunch Offer! Contact Us for more details!
+              </p>
+<button type="button" class="btn-main fx-slide btn-line" id="contactBtn">
+  Contact Us
+</button>
+
+
+            </div>
+          </div>
+        </div>
+
     <!-- footer end -->
     <!-- Javascript Files
     ================================================== -->
@@ -1302,5 +1366,42 @@
       });
     </script>
     <!-- datepicker close -->
+         <script>
+      // Show popup 3 seconds after page load
+      window.addEventListener("load", function () {
+        setTimeout(function () {
+          var myModal = new bootstrap.Modal(
+            document.getElementById("offerPopup")
+          );
+          myModal.show();
+        }, 3000);
+      });
+    </script>
+    <script>
+  document.getElementById("contactBtn").addEventListener("click", function (e) {
+    e.preventDefault(); // stop immediate navigation
+
+    // Hide modal
+    const modal = bootstrap.Modal.getInstance(document.getElementById("offerPopup"));
+    modal.hide();
+
+    // Redirect after modal animation (300ms default)
+    setTimeout(() => {
+      window.location.href = this.getAttribute("href");
+    }, 300); // match your modal fade duration
+  });
+</script>
+<script>
+  document.getElementById("contactBtn").addEventListener("click", function () {
+    // Close modal
+    const modal = bootstrap.Modal.getInstance(document.getElementById("offerPopup"));
+    modal.hide();
+
+    // Redirect after animation
+    setTimeout(() => {
+      window.location.href = "contact.html";
+    }, 300); // match Bootstrap modal fade duration
+  });
+</script>
   </body>
 </html>
