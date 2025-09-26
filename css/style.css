@@ -7086,6 +7086,42 @@ footer .tiny-border span {
   border: solid 1px #ddd;
 }
 
+.whats {
+  bottom: 90px;
+}
+
+.call {
+  bottom: 20px;
+}
+
+.call, .whats {
+    position: fixed;
+    left: 10px;
+    z-index: 1000;
+    animation: 1s infinite bounce;
+}
+
+.imgcall,
+.imgwhats {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+#offerPopup .btn {
+  line-height: 1.2;
+  height: auto;
+}
+
+#offerPopup .btn:focus,
+#offerPopup .btn:active {
+  outline: none !important;
+  box-shadow: none !important;
+  height: auto !important;
+}
+
 .bg-blur {
   background: rgba(0, 0, 0, .15);
   -webkit-backdrop-filter: blur(10px);
