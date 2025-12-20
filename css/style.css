@@ -7098,7 +7098,7 @@ footer .tiny-border span {
     position: fixed;
     left: 10px;
     z-index: 1000;
-    animation: 1s infinite bounce;
+    /* animation: 1s infinite bounce; */
 }
 
 .imgcall,
@@ -12946,4 +12946,9 @@ img {
     margin-left: auto;
     width: auto;
   }
+}
+
+@media (min-width: 768px)
+{
+.pt-6 {padding-top: 4rem;}  
 }
