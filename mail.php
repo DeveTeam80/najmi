@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Your email address
-    $to = "admin@najmigroup.co";
+    $to = "inquiry@najmigroup.co";
     $subject = "New Contact Form Submission from $name";
 
     // Headers
