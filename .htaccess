@@ -1,0 +1,7 @@
+RewriteEngine On
+
+
+
+# Redirect /vr and everything inside it to vr.najmigroup.co
+RewriteCond %{REQUEST_URI} ^/vr(/.*)?$ [NC]
+RewriteRule ^vr(/.*)?$ https://vr.najmigroup.co$1 [R=301,L]
