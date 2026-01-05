@@ -1136,10 +1136,10 @@ jQuery(document).ready(function () {
   jQuery("#dark-mode").on("click", function () {
     if (jQuery("body").hasClass("dark-scheme")) {
       window.location.href =
-        "https://www.designesia.com/themes/gospace/index.html";
+        "https://www.designesia.com/themes/gospace/index";
     } else {
       window.location.href =
-        "https://www.designesia.com/themes/gospace/02_dark-index.html";
+        "https://www.designesia.com/themes/gospace/02_dark-index";
     }
   });
 
