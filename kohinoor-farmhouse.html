@@ -27,16 +27,22 @@
     <link href="css/datepicker.css" rel="stylesheet" type="text/css" />
     <!-- color scheme -->
     <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" />
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-FM55B0GQVT"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-FM55B0GQVT');
-</script>
-</head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-FM55B0GQVT"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-FM55B0GQVT");
+    </script>
+  </head>
 
   <body>
     <div id="wrapper">
@@ -74,9 +80,7 @@
                         <a class="menu-item" href="properties">Projects</a>
                       </li>
                       <li>
-                        <a
-                          class="menu-item d-block d-lg-none"
-                          href="contact"
+                        <a class="menu-item d-block d-lg-none" href="contact"
                           >Contact Us</a
                         >
                       </li>
@@ -218,6 +222,32 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="najmi-vr-section">
+        <div class="container">
+          <h3 class="section-title">360° Virtual Tour</h3>
+          <p class="section-subtitle">Take a quick preview of the property</p>
+
+          <div class="vr-cinematic-wrapper">
+            <!-- Live VR -->
+            <iframe
+              src="https://vr.najmigroup.co/"
+              allow="fullscreen; vr; xr-spatial-tracking"
+              loading="lazy"
+            ></iframe>
+
+            <!-- Interaction blocker -->
+            <div class="vr-blocker"></div>
+
+            <div class="vr-frost"></div>
+
+            <!-- CTA -->
+            <a href="https://vr.najmigroup.co/" target="_blank" class="vr-cta">
+              View Full Virtual Tour
+            </a>
           </div>
         </div>
       </section>
@@ -378,7 +408,6 @@
                       >Kohinoor Farmhouse Plot without Bungalow</a
                     >
                   </li>
-                 
                 </ul>
               </div>
             </div>
@@ -431,39 +460,42 @@
             </div>
           </div>
         </div>
-      </footer><a href="tel:+91 99878 99052" target="_blank" class="call">
-          <img src="images/najmi/call (1).png" alt="Email" class="imgcall" />
-        </a>
+      </footer>
+      <a href="tel:+91 99878 99052" target="_blank" class="call">
+        <img src="images/najmi/call (1).png" alt="Email" class="imgcall" />
+      </a>
 
-        <a href="https://wa.me/9987899052" target="_blank" class="whats">
-          <img src="images/najmi/whatsapp (3).png" alt="WhatsApp" class="imgwhats" />
-        </a>    <div
-          class="modal fade"
-          id="offerPopup"
-          tabindex="-1"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content text-center p-4">
-              <button
-                type="button"
-                class="btn-close position-absolute top-5 end-0 pe-5"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
+      <a href="https://wa.me/9987899052" target="_blank" class="whats">
+        <img
+          src="images/najmi/whatsapp (3).png"
+          alt="WhatsApp"
+          class="imgwhats"
+        />
+      </a>
+      <div class="modal fade" id="offerPopup" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content text-center p-4">
+            <button
+              type="button"
+              class="btn-close position-absolute top-5 end-0 pe-5"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
 
-              <h2 class="fw-bold mb-3">Special Offer</h2>
-              <p class="mb-4">
-                Limited Time Prelaunch Offer! Contact Us for more details!
-              </p>
-<button type="button" class="btn-main fx-slide btn-line" id="contactBtn">
-  Contact Us
-</button>
-
-
-            </div>
+            <h2 class="fw-bold mb-3">Special Offer</h2>
+            <p class="mb-4">
+              Limited Time Prelaunch Offer! Contact Us for more details!
+            </p>
+            <button
+              type="button"
+              class="btn-main fx-slide btn-line"
+              id="contactBtn"
+            >
+              Contact Us
+            </button>
           </div>
         </div>
+      </div>
       <!-- footer end -->
     </div>
     <script src="js/vendors.js"></script>
@@ -471,5 +503,27 @@
     <script src="js/validation-booking.js"></script>
     <script src="js/swiper.js"></script>
     <script src="js/custom-swiper-2.js"></script>
+    <script>
+      const vrWrapper = document.getElementById("vrWrapper");
+      const vrIframe = document.getElementById("vrIframe");
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              // Load VR when visible
+              if (!vrIframe.src) {
+                vrIframe.src = vrIframe.dataset.src;
+              }
+            } else {
+              vrIframe.src = "";
+            }
+          });
+        },
+        { threshold: 0.25 }
+      );
+
+      observer.observe(vrWrapper);
+    </script>
   </body>
 </html>
